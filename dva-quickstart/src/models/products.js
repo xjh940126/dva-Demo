@@ -5,7 +5,12 @@ export default {
     
     reducers:{
         'delete'(state,{ payload: id}) {
+           
             return state.filter(item => item.id !== id);
+             
+        },
+        'add'(state,{ payload: id}) {
+            return state.filter(item => item.id == id);
         },
     },
     

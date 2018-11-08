@@ -9,10 +9,16 @@ const Products = ({dispatch,products}) =>{
             payload: id,
         });
     }
+    function handleAdd (id) {
+        dispatch({
+            type:'products/add',
+            payload: id,
+        });
+    }
     return (
         <div>
             <h2>list of Products</h2>
-            <ProductList onDelete = {handleDel} products = {products} />
+            <ProductList onDelete = {handleDel} onAdd = {handleAdd} products = {products} />
         </div>
     );    
 };
