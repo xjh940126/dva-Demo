@@ -4,12 +4,13 @@ import styles from './index.css';
 
 
 const { Header, Content, Footer } = Layout;
+
 function BasicLayout(props) {
   return (
     <div className={styles.normal}>
       <Layout>
        <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
-        <div className="logo"></div>
+        {/* <div className="logo"></div> */}
           <Menu
             theme="dark"
             mode="horizontal"
